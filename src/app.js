@@ -41,7 +41,7 @@ const App = () => {
                         element={ user ? <Navigate to={ path } /> : <Login /> } 
                     />
                     <Route path={ `post/:id` } 
-                        element={ user ? <Post /> : <Navigate to={ path } /> } 
+                        element={ user ? <Post /> : <Navigate to= "/" /> } 
                     />
                     <Route path="*" element={ <NotFound /> } />
                 </Routes>
