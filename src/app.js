@@ -6,7 +6,6 @@ import Post from './pages/Post';
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import NotFound from './pages/NotFound';
 import { useEffect, useState } from 'react';
-import { backendServer } from './Site';
 
 const App = () => {
     const [user, setUser] = useState(null);
