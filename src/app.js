@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
     const [user, setUser] = useState(null);
-    const path = "https://mdalaminislam7878.github.io/React-Social-Login";
+    const path = "React-Social-Login";
     useEffect(() => {
         fetch('http://localhost:5000/auth/login/success', {
             method: 'GET',
