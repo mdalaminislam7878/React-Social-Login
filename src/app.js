@@ -9,8 +9,8 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
     const [user, setUser] = useState(null);
-    useEffect(async () => {
-        await fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success/`, {
+    useEffect(() => {
+        fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success/`, {
             method: 'GET',
             headers: {
                 'Access-Control-Allow-Origin': 'https://mdalaminislam7878-social-app.netlify.app/',
