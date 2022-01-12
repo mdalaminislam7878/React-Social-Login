@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const NotFound = () => {
-    const path = "https://mdalaminislam7878.github.io/React-Social-Login";
+    const path = "React-Social-Login";
     return ( 
         <div className="not-found">
             <h1>404! Not Found</h1>
