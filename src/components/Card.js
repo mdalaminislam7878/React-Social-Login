@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Card = ({ post }) => {
-    const path = "";
     return (  
         <div className="card">
             <Link to={`post/${post.id}`}>
