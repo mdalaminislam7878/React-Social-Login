@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
     const [user, setUser] = useState(null);
-    const path = "https://mdalaminislam7878.github.io/React-Social-Login/";
+    const path = "/React-Social-Login";
     useEffect(() => {
         fetch('http://localhost:5000/auth/login/success', {
             method: 'GET',
@@ -38,10 +38,10 @@ const App = () => {
                 <Routes>
                     <Route path={ path } element={ <Home />} />
                     <Route path={ `${path}/login` } 
-                        element={ user ? <Navigate to="/" /> : <Login /> } 
+                        element={ user ? <Navigate to={ path } /> : <Login /> } 
                     />
                     <Route path={ `${path}/post/:id` } 
-                        element={ user ? <Post /> : <Navigate to="/" /> } 
+                        element={ user ? <Post /> : <Navigate to={ path } /> } 
                     />
                     <Route path="*" element={ <NotFound /> } />
                 </Routes>
