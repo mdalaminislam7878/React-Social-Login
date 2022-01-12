@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 const Navbar = ({ user }) => {
-    const path = "https://mdalaminislam7878.github.io/React-Social-Login";
+    const path = "";
     const logout = () => {
         window.open('http://localhost:5000/auth/logout', '_self')
     }
