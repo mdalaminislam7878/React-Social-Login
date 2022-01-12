@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Card = ({ post }) => {
-    const path = "";
+    const path = "React-Social-Login";
     return (  
         <div className="card">
             <Link to={`${path}/post/${post.id}`}>
