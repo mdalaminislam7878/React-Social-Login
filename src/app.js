@@ -10,14 +10,11 @@ import { useEffect, useState } from 'react';
 const App = () => {
     const [user, setUser] = useState(null);
     useEffect(() => {
-        // fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success`, {
-        fetch(`https://randomuser.me/api/`, {
+        fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success`, {
             method: 'GET',
-            credentials: 'include',
             headers: {
                 Accept: 'application/json',
                 "Content-Type": "application/json",
-                'Access-Control-Allow-Credentials': true,
             },
         }).then(res => {
             console.log(res)
