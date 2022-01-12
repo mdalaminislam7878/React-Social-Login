@@ -9,17 +9,17 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
     const [user, setUser] = useState(null);
-    useEffect(() => {
-        fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success/`, {
+    useEffect(async () => {
+        await fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success/`, {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json",
             },
         }).then(res => {
-            console.log(res)
             if(res) return res.json();
             throw new Error("Athuntication is failed")
         }).then(data => {
+            console.log(data);
             setUser(data.user);
         }).catch(err => {
             console.log(err.message);
