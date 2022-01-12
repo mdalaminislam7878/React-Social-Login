@@ -13,6 +13,7 @@ const App = () => {
         await fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success/`, {
             method: 'GET',
             headers: {
+                'Access-Control-Allow-Origin': 'https://mdalaminislam7878-social-app.netlify.app/',
                 "Content-Type": "application/json",
             },
         }).then(res => {
