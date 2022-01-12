@@ -11,7 +11,7 @@ import { backendServer } from './Site';
 const App = () => {
     const [user, setUser] = useState(null);
     useEffect(() => {
-        fetch(`${backendServer}/auth/login/success`, {
+        fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success`, {
             method: 'GET',
             credentials: 'include',
             headers: {
