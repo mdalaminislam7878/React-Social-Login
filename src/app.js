@@ -9,7 +9,6 @@ import { useEffect, useState } from 'react';
 
 const App = () => {
     const [user, setUser] = useState(null);
-    const path = "";
     useEffect(() => {
         fetch('http://localhost:5000/auth/login/success', {
             method: 'GET',
@@ -29,16 +28,15 @@ const App = () => {
             console.log(err.message);
         })
     }, [])
-    
 
     return (  
         <BrowserRouter>
             <div className="App">
                 <Navbar user= {user} />
                 <Routes>
-                    <Route path={ path } element={ <Home />} />
-                    <Route path={ `${path}/login` } 
-                        element={ user ? <Navigate to={ path } /> : <Login /> } 
+                    <Route path="/" element={ <Home />} />
+                    <Route path="login" 
+                        element={ user ? <Navigate to="/" /> : <Login /> } 
                     />
                     <Route path={ `post/:id` } 
                         element={ user ? <Post /> : <Navigate to= "/" /> } 
