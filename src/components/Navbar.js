@@ -16,7 +16,7 @@ const Navbar = ({ user }) => {
                     <li onClick={ logout }>Logout</li>
                 </ul>
             ) : (
-                <Link to="login">Login</Link>
+                <Link to={`$path/login`}>Login</Link>
             )}
         </nav>
     );
