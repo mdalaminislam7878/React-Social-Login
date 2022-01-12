@@ -3,7 +3,6 @@ import { posts } from "../data";
 const Home = () => {
     return (  
         <div className="home">
-            <h1>Hello Deploy</h1>
             <section className="product">   
                 { posts.map((post) => (
                     <Card key={post.id} post= { post }/>
