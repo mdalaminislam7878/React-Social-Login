@@ -29,6 +29,7 @@ const App = () => {
             console.log(err.message);
         })
     }, [])
+    console.log(user);
     return (  
         <BrowserRouter>
             <div className="App">
