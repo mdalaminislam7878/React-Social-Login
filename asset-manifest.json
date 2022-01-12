@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/React-Social-Login/static/css/main.92aec017.css",
-    "main.js": "/React-Social-Login/static/js/main.8138dccc.js",
+    "main.js": "/React-Social-Login/static/js/main.98256413.js",
     "static/media/google.png": "/React-Social-Login/static/media/google.ca838ff3699bdb974e69.png",
     "static/media/facebook.png": "/React-Social-Login/static/media/facebook.c7e95eca7062446cc343.png",
     "static/media/github.png": "/React-Social-Login/static/media/github.8d3d03e8774597019ff9.png",
     "index.html": "/React-Social-Login/index.html",
     "main.92aec017.css.map": "/React-Social-Login/static/css/main.92aec017.css.map",
-    "main.8138dccc.js.map": "/React-Social-Login/static/js/main.8138dccc.js.map"
+    "main.98256413.js.map": "/React-Social-Login/static/js/main.98256413.js.map"
   },
   "entrypoints": [
     "static/css/main.92aec017.css",
-    "static/js/main.8138dccc.js"
+    "static/js/main.98256413.js"
   ]
 }
