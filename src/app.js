@@ -40,7 +40,7 @@ const App = () => {
                     <Route path={ `${path}/login` } 
                         element={ user ? <Navigate to={ path } /> : <Login /> } 
                     />
-                    <Route path={ `${path}/post/:id` } 
+                    <Route path={ `post/:id` } 
                         element={ user ? <Post /> : <Navigate to={ path } /> } 
                     />
                     <Route path="*" element={ <NotFound /> } />
