@@ -6,11 +6,12 @@ import Post from './pages/Post';
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import NotFound from './pages/NotFound';
 import { useEffect, useState } from 'react';
+import { backendServer } from './Site';
 
 const App = () => {
     const [user, setUser] = useState(null);
     useEffect(() => {
-        fetch('http://localhost:5000/auth/login/success', {
+        fetch(`${backendServer}/auth/login/success`, {
             method: 'GET',
             credentials: 'include',
             headers: {
@@ -28,7 +29,6 @@ const App = () => {
             console.log(err.message);
         })
     }, [])
-
     return (  
         <BrowserRouter>
             <div className="App">

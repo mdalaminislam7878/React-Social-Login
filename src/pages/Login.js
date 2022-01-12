@@ -1,19 +1,20 @@
 import GoogleIcon from '../assets/images/google.png';
 import FacebookIcon from '../assets/images/facebook.png';
 import GithubIcon from '../assets/images/github.png';
+import { backendServer } from '../Site';
 
 const Login = () => {
 
     const google = () => {
-        window.open('http://localhost:5000/auth/google', '_self')
+        window.open(`${ backendServer }/auth/google`, '_self')
     }
 
     const github = () => {
-        window.open('http://localhost:5000/auth/github', '_self')
+        window.open(`${ backendServer }/auth/github`, '_self')
     }
 
     const facebook = () => {
-        window.open('http://localhost:5000/auth/facebook', '_self')
+        window.open(`${ backendServer }/auth/facebook`, '_self')
     }
 
     return ( 

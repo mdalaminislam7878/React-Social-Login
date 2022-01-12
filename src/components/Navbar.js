@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
+import { backendServer } from "../Site";
 const Navbar = ({ user }) => {
-    const path = "";
     const logout = () => {
-        window.open('http://localhost:5000/auth/logout', '_self')
+        window.open(`${ backendServer }/auth/logout`, '_self')
     }
     return ( 
         <nav className="navbar">
-            <h1 className="logo"><Link to={ path }>LogIn System</Link></h1>
+            <h1 className="logo"><Link to="/">LogIn System</Link></h1>
             { user ? (
                 <ul className="top-menu">
                     <li>
@@ -16,7 +16,7 @@ const Navbar = ({ user }) => {
                     <li onClick={ logout }>Logout</li>
                 </ul>
             ) : (
-                <Link to={`${path}/login`}>Login</Link>
+                <Link to="login">Login</Link>
             )}
         </nav>
     );
