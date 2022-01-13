@@ -13,8 +13,7 @@ const App = () => {
         fetch(`https://mdalaminislam787-social.herokuapp.com/auth/login/success/`, {
             method: 'GET',
             headers: {
-                'Access-Control-Allow-Origin': '*',
-                "Content-Type": "application/json; charset=utf-8",
+                "Content-Type": "application/json",
             },
         }).then(res => {
             if(res) return res.json();
